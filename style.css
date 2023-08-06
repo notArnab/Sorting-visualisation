@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Merriweather:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+#container{
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 5rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2130;
+
+    /* global 94%+ browsers support */
+    /* background: linear-gradient(90deg, rgba(238, 130, 238, 1) 0%, rgba(67, 79, 255, 1) 100%); */
+}
+
+h1{
+    margin: 2rem;
+    font-size: 4rem;
+    word-spacing: 3px;
+    color: aliceblue;
+    font-family: 'Handjet';
+}
+
+button{
+    background-color: transparent;
+    border: 2px #1c2130;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+span{
+    font-size: 1.5rem;
+    color: aliceblue;
+    background-color: transparent;
+    margin: 5px
+}
+.items{
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.button_container{
+    display: flex;
+    justify-content: space-between;
+}
+.custom_input_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.generate{
+    margin-left: 1rem;
+    border: 2px solid #4477CE;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 88px;
+    padding: 15px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.bar{
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 1px;
+    border-color: aqua;
+    padding: 2px;
+    transition: height 20ms;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 0.5rem;
+  }
+.merge{
+    border: 2px solid #4477CE;
+    border-top: none;
+    border-bottom: none;
+    margin: 10px;
+    padding: 15px;
+}
+.sort_me{
+    border: 2px solid #4477CE;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    margin: 9px;
+    padding-right: 21px
+}
+.input_space{
+    height: 2rem;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <H1 class="sort_heading">Sorting Technique visualisation</H1>
+    <div class="items">
+        <div class="button_container">
+            <button class="sort_me" onclick="sortVisual()">Sort Me</button>
+            <button onclick="unsort()">Shuffle Me</button>
+        </div>
+        <div class="slider_container">
+            <span>Select Range:</span><input type="range" value="10" min="10" max="50" onchange="changeRange(this)" id="range" class="slider">
+        </div>
+
+        <div class="sorting-buttons">
+            <button class="bubble" onclick="changeType(1)">Bubble Sort</button>
+            <button class="merge" onclick="changeType(2)">Merge Sort</button>
+            <button class="insertion" onclick="changeType(3)">Insertion Sort</button>
+        </div>
+    </div>
+    <div id="container"></div>
+    <div class="custom_input_container">
+        <span>Enter Custom Array :</span><input type="text" id="custom" class="input_space">
+        <button class="generate" onclick="generate_custom_array()">Generate Custom Bars</button>
+    </div>
+</body>
+<script src="./Sorting/bubbleSort.js"></script>
+<script src="./Sorting/insertionSort.js"></script>
+<script src="./Sorting/mergeSort.js"></script>
+<script src="script.js"></script>
+</html>
