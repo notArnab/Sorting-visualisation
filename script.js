@@ -1,6 +1,7 @@
 let n = 100;
 let sortit = 1;
 let slider = document.getElementById("range");
+const time = document.getElementById("time");
 n = slider.value;
 slider.addEventListener("input", update_array);
 // slider.oninput = function () {
@@ -108,20 +109,21 @@ const sortVisual = async() => {
       await bubble_sort(arr, changeColor, playSound, swap);
       d1 = new Date();
       console.log((d1-d)/1000);
+      time.innerHTML=((d1-d)/1000).toFixed(2)+"s";
       break;
     case 2:
       d=new Date();
       await mergesort(arr, 0, n - 1, changeColor, playSound);
       d1 = new Date();
       console.log((d1-d)/1000);
-      time.innerHTML((d1-d)/1000);
+      time.innerHTML=((d1-d)/1000).toFixed(2)+"s";
       break;
     case 3:
       d=new Date();
       await insertionSort(arr, changeColor, playSound, swap);
       d1 = new Date();
       console.log((d1-d)/1000);
-      time.innerHTML((d1-d)/1000);
+      time.innerHTML=((d1-d)/1000).toFixed(2)+"s";
       break;
     default:
       break;

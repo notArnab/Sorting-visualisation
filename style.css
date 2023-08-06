@@ -118,3 +118,8 @@ span{
 .input_space{
     height: 2rem;
 }
+#time,.time{
+    color: white;
+    font-family: 'Handjet';
+    font-size: 2rem;
+}
